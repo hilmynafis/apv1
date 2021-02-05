@@ -99,9 +99,9 @@ const { limit } = require('./database/menu/limit')
 // Load Vcard Contact
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN: AGUSZ PAKEZ Admin\n' // full name
+            + 'FN: Hlmy\n' // full name
             + 'ORG: Pengembang Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6289694354384:+62 896-9435-4384\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6283849992226:+62 838-4999-2226\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = '#'
 blocked = []
@@ -392,14 +392,14 @@ async function starts() {
 					ownerB: '[❗] *OWNER ONLY*❌',
 					admin: '[❗] *ADMIN ONLY* ❌',
 					Badmin: '[❗] *BOT HARUS JADI ADMIN* ❌',
-                                        daftarB: `──「 FORMULIR PENDAFTARAN 」──\nHallo umm !\nRegistrasi dulu yah omm, dengan cara berikut. \n\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar AGUSZ|20`,
+                                        daftarB: `──「 FORMULIR PENDAFTARAN 」──\nHallo umm !\nRegistrasi dulu yah omm, dengan cara berikut. \n\nCommand : ${prefix}daftar nama|umur\nContoh : ${prefix}daftar apbot|17`,
 				}
 			}
     			const apakah = ['Ya','Tidak']
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["6289694354384@s.whatsapp.net"] // replace this with your number
+			const ownerNumber = ["6283849992226@s.whatsapp.net"] // replace this with your number
 			const nomorOwner = [ownerNumber]
 			const isGroup = from.endsWith('@g.us')
 			const totalchat = await client.chats.all()
@@ -423,7 +423,7 @@ async function starts() {
 
                         // Options
                         const botName = 'APBOT'
-                        const ownerName = 'AGUSZ PAKEZ'
+                        const ownerName = 'Hlmy'
                         const BarBarKey = 'YOUR_APIKEY'
 
 			const isUrl = (url) => {
